@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TU RANCHITO</title>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component@1.1.0/dist/aframe-environment-component.min.js"></script>
+    <!--<script src="//cdn.rawgit.com/donmccurdy/aframe-physics-system/v4.0.1/dist/aframe-physics-system.min.js"></script>-->
+</head>
+<body>
+    <a-scene>
+        <a-assets>
+            <audio id="MusicaExperiencia" src="assets/Audio/Feels - Patrick Patrikios.mp3"></audio>
+            <img id="sK "src="assets/Imagenes/C.jpg">
+        </a-assets>
+        <a-sky color="assets/Imagenes/C.jpg"></a-sky>
+        <a-entity environment="preset: threetowers; fog: 0; dressing: none; ground: flat; groundYScale: 100; playArea: 2; skyType: gradient; skyColor: gray"></a-entity>
+        <a-entity position="0 5 0" sound="src:#MusicaExperiencia; autoplay: true; volume: 1;"></a-entity>
+
+        <a-entity position="0 0 5">
+            <a-camera userheight="1.7"></a-camera>
+        </a-entity>
+    </a-scene>    
+</body>
+</html>
